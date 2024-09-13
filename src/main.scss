@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=SUSE:wght@100..800&display=swap');
+
+$primary-color: #222222;
+$medium-color: #a9a9a9;
+$light-color: #d3d3d3;
+$medium-white: #f0f0f0;
+$white: #fff;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "SUSE", sans-serif;
+}
+
+.main{
+    position: relative;
+    overflow-x: hidden;
+}
+
+.content__btn{
+    margin: 4rem 0;
+
+    .btn{
+        padding: 15px 50px;
+        border-radius: 30px;
+        border: 1px solid $primary-color;
+        outline: none;
+        font-size: 20px;
+        color: $primary-color;
+        transition: .5s;
+    }
+
+    .btn:hover{
+        background-color: $primary-color;
+        color: $medium-white;
+    }
+
+
+}
+
+
+.main__head{
+    font-size: 40px;
+    color: $primary-color;
+}

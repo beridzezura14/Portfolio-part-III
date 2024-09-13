@@ -1,0 +1,48 @@
+@import '/src/main.scss';
+
+
+.contact{
+    max-width: 90%;
+    margin: auto;
+
+    .contact__p{
+        margin-top: 1rem;
+        line-height: 25px;
+    }
+    .contact__info{
+        border-top: 1px solid $light-color;
+        margin-top: 2rem;
+        padding-top: 2rem;
+        display: grid;
+        gap: 1rem;
+
+        div{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .or{
+        text-align: center;
+        padding: 2rem;
+    }
+    form{
+        display: grid;
+        gap: 2rem;
+
+        input, textarea{
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid $primary-color;
+            padding: 10px 10px;
+            outline: none;
+            font-size: 18px;
+        }
+        textarea{
+            height: 100px;
+        }
+        .contact__btn{
+            margin-top: 2rem;
+        }
+    }
+
+}

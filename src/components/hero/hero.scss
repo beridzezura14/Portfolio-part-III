@@ -1,0 +1,43 @@
+@import '/src/main.scss';
+
+
+.hero{
+    background-color: $medium-white;
+    padding: 10rem 0 4rem 0;
+
+    .hero__content{
+        max-width: 90%;
+        margin: auto;
+        .hero__text{
+            text-align: center;
+        }
+
+        .hero__text h1{
+            margin-top: 2rem;
+            text-transform: uppercase;
+            color: $primary-color;
+            font-size: 40px;
+            // font-family: "Libre Bodoni", system-ui;
+            // .span__name{
+            //     -webkit-text-stroke-width: 1px;
+            //     -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+            // }
+        }
+        .hero__text p{
+            margin-top: 1rem;
+            font-size: 18px;
+        }
+
+        .photo{
+            display: flex;
+            justify-content: center;
+            margin-top: 5rem;
+
+            .my__photo{
+                width: 80%;
+                border-bottom-left-radius: 100px;
+            }
+        }
+
+    }
+}

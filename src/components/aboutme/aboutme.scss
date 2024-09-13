@@ -1,0 +1,64 @@
+@import '/src/main.scss';
+
+
+.about{
+    max-width: 90%;
+    margin: 4rem auto 0;
+    overflow-x: hidden;
+
+    .about__p{
+        margin-top: 2rem;
+        line-height: 25px;
+    }
+
+    .personal__info{
+        margin: 4rem 0;
+
+        .detail__info{
+            border-top: 1px solid $light-color;
+            padding: 3rem 0;
+
+            .per__info{
+                display: grid;
+                gap: 15px;
+                margin-top: 1rem;
+
+                .name__percentage{
+                    display: flex;
+                    justify-content: space-between;
+
+                }
+                .percentage__line{
+                    margin-top: 10px;
+                    width: 100%;
+                    background-color: $medium-white;
+                    height: 4px;
+                    position: relative;
+                    z-index: -11;
+                }
+
+                .exp__item h3{
+                    font-size: 22px;
+                }
+
+                .position__date{
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    // align-items: center;
+
+                    .exp__position{
+                        font-size: 18px;
+                        width: 70%;
+                    }
+
+                    .exp__date{
+                        width: 100px;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+
+    }
+}

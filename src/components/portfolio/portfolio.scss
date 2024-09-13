@@ -1,0 +1,51 @@
+@import '/src/main.scss';
+
+.portfolio{
+    background-color: $medium-white;
+    margin: -3rem auto 3rem;
+    padding: 3rem 0;
+    
+    .portfolio__content{
+        max-width: 90%;
+        margin: auto;
+
+
+        .item{
+            border-bottom: 1px solid $medium-color;
+            padding: 2rem 0;
+
+            .mobile__absolute{
+                position: absolute;
+                width: 30%;
+                border: 2px solid $primary-color;
+                border-radius: 10px;
+                right: 12%;
+                margin-top: 3rem;
+                z-index: 1;
+            }
+
+
+            .portf__img{
+                width: 100%;
+                border: 2px solid $primary-color;
+                border-radius: 10px;
+            }
+
+            h3{
+                font-size: 23px;
+                margin-top: 1rem;
+            }
+
+            .portfolio__link{
+                margin: 2rem 0;
+
+                a{
+                    background-color: $primary-color;
+                    color: $white;
+                    padding: 10px 50px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
