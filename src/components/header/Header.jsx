@@ -13,9 +13,9 @@ function Header() {
         <div className="main__header" id="header">
             <nav className='header'>
                 <div className='header__content'>
-                        <div>
-                            <h1 className='logo'>Be</h1>
-                        </div>
+                    <div>
+                        <h1 className='logo'>Be</h1>
+                    </div>
                     <div>
                         <ul className= {isOpen ? "navbar active ": 'navbar'}>
                             <div className="nav__name">Zura Beridze</div>

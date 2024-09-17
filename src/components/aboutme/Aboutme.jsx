@@ -13,7 +13,7 @@ const peesonalInfo = [
     {   
         id: 2,
         name: "Address",
-        answer: "Address not mention"
+        answer: "Georgia, Tbilisi"
     },
     {   
         id: 3,
@@ -61,7 +61,7 @@ const skills = [
     {   
         id: 3,
         name: "Javascript",
-        percentage: "60"
+        percentage: "40"
     },
     {   
         id: 4,
@@ -103,8 +103,6 @@ const experience = [
 ]
 
 
-
-
 function Aboutme() {
 
     useGSAP(() => {
@@ -117,23 +115,37 @@ function Aboutme() {
             scrollTrigger: {
                 trigger: ".knowledge__level",
             }
-        }
+        },
+        gsap.fromTo(".about_anim", {
+            delay: 1.7,
+            y: 100,
+            opacity: 0,
+          },{
+            scrollTrigger: {
+                trigger: ".about_anim",
+            },
+            y: 0,
+            stagger: .1,
+            duration: 1,
+            opacity: 1,
+            ease: "power1.inOut"
+          })
     )
     })
 
     return (
         <div  className="about">
-            <h2 className="main__head">1. About</h2>
-            <p className="about__p">
+            <h2 className="main__head about_anim">1. About</h2>
+            <p className="about__p about_anim">
                 {`I'm Zura, a  front-end developer with a strong foundation in HTML, CSS, and JavaScript. I enjoy creating responsive websites using modern frameworks like React.js, and I have experience in adding dynamic animations using GSAP. I'm currently working on building my portfolio site with Sass, focusing on delivering smooth, user-friendly experiences across different devices. Along with web development, I'm also exploring Python and enhancing my freelancing skills`}
             </p>
 
-            <div className='content__btn'>
-                <a href='' className="btn">Download CV</a>
+            <div className='content__btn about_anim'>
+                <a href='../cv.pdf' download='cv.pdf' className="btn contact__btn">Download CV</a>
             </div>
 
             <div className="personal__info fade">
-                <div className="detail__info">
+                <div className="detail__info about_anim">
                     <h2 className="about__heads">Personal Info:</h2> 
                     <div className="per__info" >
                         {
@@ -145,12 +157,12 @@ function Aboutme() {
                         }
                     </div>
                 </div>
-                <div className="detail__info">
+                <div className="detail__info about_anim">
                     <h2 className="about__heads">Skills:</h2> 
                     <div className="per__info" >
                         {
                             skills.map(item => (
-                                <div className="" key={item.id}>
+                                <div className="lines" key={item.id}>
                                     <div className="name__percentage">
                                         <div>{item.name}</div>  
                                         <div>{item.percentage}%</div>
@@ -174,7 +186,7 @@ function Aboutme() {
                         }
                     </div>
                 </div>
-                <div className="detail__info">
+                <div className="detail__info details__grid about_anim">
                     <h2 className="about__heads">Work Experionce:</h2> 
                         <div className="per__info" >
                         {
@@ -183,6 +195,7 @@ function Aboutme() {
                                         <h3><b>{item.name}</b></h3>
                                         <div className="position__date">
                                             <div className="exp__position">{item.position}</div>
+                                            <div className="connect__line"></div>
                                             <div className="exp__date">{item.date}</div>
                                         </div>
                                     </div>

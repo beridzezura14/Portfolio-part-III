@@ -71,7 +71,7 @@ $white: #fff;
 
 
             input{
-                padding: 15px;
+                padding: 15px 0;
                 outline: none;
                 color: $white;
                 background-color: transparent;
@@ -88,6 +88,35 @@ $white: #fff;
                 border: 1px solid $light-color;
 
             }
+        }
+    }
+}
+
+
+@media (min-width: 1025px){
+    .footer{
+        text-align: left;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important;
+        padding: 3rem 10%;
+        .footer__item__menu{
+            padding-left: 20px !important;
+        }
+        .footer__item__contact{
+            .footer__contact__info{
+                div{
+                    justify-content: flex-start;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1367px){
+    .footer{
+        grid-template-columns: repeat(4, 1fr) !important;
+        padding: 5rem 10%;
+        .footer__item__menu{
+            padding-left: 0px !important;
         }
     }
 }

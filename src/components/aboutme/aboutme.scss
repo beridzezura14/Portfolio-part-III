@@ -45,6 +45,7 @@
                     margin-top: 10px;
                     display: flex;
                     justify-content: space-between;
+                    align-items: center;
                     // align-items: center;
 
                     .exp__position{
@@ -61,4 +62,40 @@
         }
 
     }
+}
+
+@media (min-width: 1025px){
+    .about{
+        max-width: 80%;
+        .personal__info{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            .lines{
+                overflow: hidden;
+            }
+
+            .details__grid{
+                grid-column: 1 / 3;
+            }
+            .position__date{
+                gap: 2rem;
+
+                .exp__position{
+                    width: auto;
+                }
+            }
+
+
+
+            .connect__line{
+                height: 3px;
+                width: 10%;
+                background-color: $light-color;
+            }
+        }
+
+        
+    }
+
 }

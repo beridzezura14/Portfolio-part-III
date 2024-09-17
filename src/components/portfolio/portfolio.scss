@@ -1,14 +1,18 @@
 @import '/src/main.scss';
 
 .portfolio{
-    background-color: $medium-white;
+    background-color: $primary-color;
     margin: -3rem auto 3rem;
     padding: 3rem 0;
+    color: $white;
     
     .portfolio__content{
         max-width: 90%;
         margin: auto;
 
+        h2{
+            color: $white;
+        }
 
         .item{
             border-bottom: 1px solid $medium-color;
@@ -40,12 +44,65 @@
                 margin: 2rem 0;
 
                 a{
-                    background-color: $primary-color;
-                    color: $white;
+                    background-color: $white;
+                    color: $primary-color;
+                    padding: 10px 60px;
+                    font-size: 18px;
+                    transition: .5s;
+                    border-radius: 40px;
+                }
+            }
+        }
+        .github__page{
+            margin-top: 2rem;
+            text-align: center;
+            
+            .portfolio__link{
+                margin: 2rem 0;
+                a{
+                    background-color: $white;
+                    color: $primary-color;
                     padding: 10px 50px;
                     font-size: 18px;
                 }
             }
+        }
+    }
+}
+
+
+@media (min-width: 1024px){
+
+    .portfolio__content{
+        max-width: 80% !important;
+
+        .portfolio__items{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+    
+            .item{
+                position: relative;
+                
+                .portfolio__link{
+                    margin: 2rem 0;
+        
+                    .btn__2:hover{
+                        padding: 10px 70px !important;
+                    }
+                }
+            }
+            .github__page{
+                text-align: center;
+    
+                .portfolio__link{
+
+                    a:hover{
+                        padding: 10px 70px !important;
+                    }
+                }
+            }
+    
         }
     }
 }

@@ -2,8 +2,9 @@
 
 
 .hero{
-    background-color: $medium-white;
+    background-color: $primary-color;
     padding: 10rem 0 4rem 0;
+    color: $medium-white;
 
     .hero__content{
         max-width: 90%;
@@ -15,13 +16,7 @@
         .hero__text h1{
             margin-top: 2rem;
             text-transform: uppercase;
-            color: $primary-color;
             font-size: 40px;
-            // font-family: "Libre Bodoni", system-ui;
-            // .span__name{
-            //     -webkit-text-stroke-width: 1px;
-            //     -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-            // }
         }
         .hero__text p{
             margin-top: 1rem;
@@ -37,7 +32,99 @@
                 width: 80%;
                 border-bottom-left-radius: 100px;
             }
+            .my__photo__comp{
+                display: none;
+            }
         }
 
     }
+}
+
+@media (min-width: 769px){
+    .hero{
+        padding: 1rem 0;
+    }
+}
+@media (min-width: 1025px){
+
+    .hero{
+        padding: 3rem 0;
+        position: relative;
+        z-index: 1111 !important;
+        height: 100dvh;
+        display: flex;
+        
+        .hero__content{
+            width: 80% ;
+            display: flex;
+            position: relative;
+
+
+            .photo{
+                margin-top: 0 !important;
+                
+                .my__photo{
+                    display: none;
+                }
+                .my__photo__comp{
+                    display: block;
+                    width: 350px;
+                    position: absolute;
+                    // top: -1rem;
+                    right: -14%;
+                    border-bottom-left-radius: 100px;
+                    z-index: -1;
+                }
+            }
+            .hero__text{
+                text-align: left;
+                h1{
+                    position: relative;
+                    z-index: 111 !important;
+                    background-color: $primary-color;
+                    font-size: 58.5px !important;
+                    width: 70%;
+                    padding: 0 5px 0 0;
+                }
+                p{
+                    width: 400px;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media (min-width: 1367px){
+
+    .hero{  
+        .hero__content{
+            .photo{
+                .my__photo__comp{
+                    width: 55%;
+                    position: absolute;
+                    // top: -1rem;
+                    right: -14%;
+                    border-bottom-left-radius: 100px;
+                    z-index: -1;
+                    top: -9%;
+                }
+            }
+            .hero__text{
+                text-align: left;
+                h1{
+                    position: relative;
+                    z-index: 111 !important;
+                    background-color: $primary-color;
+                    font-size: 85px !important;
+                    width: 70%;
+                }
+                p{
+                    width: 400px;
+                }
+            }
+        }
+    }
+
 }

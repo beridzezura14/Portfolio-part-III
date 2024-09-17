@@ -22,6 +22,12 @@ body{
 .main{
     position: relative;
     overflow-x: hidden;
+    
+    .main__content{
+        opacity: 0;
+        position: relative;
+
+    }
 }
 
 .content__btn{
@@ -30,16 +36,25 @@ body{
     .btn{
         padding: 15px 50px;
         border-radius: 30px;
-        border: 1px solid $primary-color;
+        border: 1px solid $medium-white;
         outline: none;
         font-size: 20px;
-        color: $primary-color;
+        color: $medium-white;
         transition: .5s;
     }
 
+    .contact__btn{
+        border: 1px solid $primary-color;
+        color: $primary-color;
+        transition: .5s;
+    }
+    
     .btn:hover{
-        background-color: $primary-color;
-        color: $medium-white;
+        padding: 15px 70px;
+
+    }
+    .contact__btn:hover{
+        padding: 15px 70px;
     }
 
 
@@ -49,4 +64,25 @@ body{
 .main__head{
     font-size: 40px;
     color: $primary-color;
+}
+
+.loading{
+    position: absolute;
+    height: 100dvh;
+    background-color: $white;
+    width: 100%;
+
+    h1{
+        color: $primary-color;
+        position: absolute;
+        bottom: 2rem;
+        left: 5%;
+    }
+}
+
+
+@media (min-width: 769px) {
+    .main{
+        max-width: 65%;
+    }
 }

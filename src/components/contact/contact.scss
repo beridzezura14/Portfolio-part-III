@@ -12,7 +12,7 @@
     .contact__info{
         border-top: 1px solid $light-color;
         margin-top: 2rem;
-        padding-top: 2rem;
+        padding: 2rem 0 4rem 0;
         display: grid;
         gap: 1rem;
 
@@ -28,21 +28,55 @@
     form{
         display: grid;
         gap: 2rem;
+        display: none;
 
-        input, textarea{
-            width: 100%;
-            border: none;
-            border-bottom: 2px solid $primary-color;
-            padding: 10px 10px;
-            outline: none;
-            font-size: 18px;
-        }
-        textarea{
-            height: 100px;
-        }
-        .contact__btn{
-            margin-top: 2rem;
-        }
+        // input, textarea{
+        //     width: 100%;
+        //     border: none;
+        //     border-bottom: 2px solid $primary-color;
+        //     padding: 10px 10px;
+        //     outline: none;
+        //     font-size: 18px;
+        // }
+        // textarea{
+        //     height: 150px;
+        // }
+        // .contact__btn{
+        //     margin-top: 2rem;
+        // }
     }
 
+}
+
+@media(min-width: 1025px){
+
+    .contact{
+        max-width: 80%;
+
+        .contact__p{
+            border-bottom: 1px solid $light-color;
+            padding-bottom: 2rem;
+        }
+        .contact__flex{
+            width: 100%;
+            padding-bottom: 3rem;   
+            .contact__info{
+                width: 100%;
+                height: 150px;
+                border-top: none;
+    
+            }
+            // form{
+            //     width: 48%;
+            //     .or{
+            //         display: none;
+            //     }
+    
+    
+            //     .form__btn{
+            //         margin: 1rem 0 3rem;
+            //     }
+            // }
+        }
+    }
 }
