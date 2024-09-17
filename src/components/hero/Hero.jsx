@@ -23,8 +23,6 @@ function Hero() {
             ease: "power1.inOut",
             width: "100%",
         })
-
-
         if (window.innerWidth <= 768) {
             gsap.fromTo(".bottom_to_top", {
                 delay: 1.7,
@@ -35,7 +33,7 @@ function Hero() {
                 stagger: .1,
                 duration: 1,
                 opacity: 1,
-                ease: "power1.inOut"
+                ease: "power1.inOut",
               })
         }else{
             gsap.fromTo(".bottom_to_top", {
@@ -50,7 +48,7 @@ function Hero() {
                 ease: "power1.inOut"
               })
         }
-    })
+    }, [])
     return (
         <div className="hero">
             <div className="hero__content">

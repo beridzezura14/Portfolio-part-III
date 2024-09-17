@@ -118,7 +118,7 @@ function Aboutme() {
         },
         gsap.fromTo(".about_anim", {
             delay: 1.7,
-            y: 100,
+            y: 60,
             opacity: 0,
           },{
             scrollTrigger: {
