@@ -2,17 +2,18 @@
 
 .portfolio{
     background-color: $primary-color;
-    margin: -3rem auto 3rem;
-    padding: 3rem 0;
+    margin: auto ;
+    padding-bottom: 4rem;
     color: $white;
     
     .portfolio__content{
         max-width: 90%;
         margin: auto;
+        padding-top: 3rem;
 
         h2{
             color: $dark-orange;
-            padding: 2rem 0;
+            padding: 2rem 0 0 0;
         }
 
         .item{
@@ -88,7 +89,7 @@
                 position: relative;
                 
                 .portfolio__link{
-                    margin: 2rem 0;
+                    padding: 2rem 0;
         
                     .btn__2:hover{
                         padding: 10px 70px !important;
@@ -99,9 +100,6 @@
                 text-align: center;
     
                 .portfolio__link{
-                    a{
-                        color: red !important;
-                    }
 
                     a:hover{
                         padding: 10px 70px !important;
