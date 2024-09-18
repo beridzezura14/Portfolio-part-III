@@ -30,7 +30,7 @@ const portfolioList = [
         img: web_2,
         img_mobile: mob_2,
         name: '2. Marco Restorant',
-        link: 'https://beridzezura14.github.io/thalby_copy/'
+        link: 'https://beridzezura14.github.io/Marco-Restaurant/index.html'
     },
     {
         id: 3,
@@ -44,7 +44,7 @@ const portfolioList = [
         img: web_4,
         img_mobile: mob_4,
         name: '4. Thalby (copy)',
-        link: 'https://beridzezura14.github.io/Marco-Restaurant/index.html'
+        link: 'https://beridzezura14.github.io/thalby_copy/'
     },
     {
         id: 5,
