@@ -18,7 +18,7 @@ function contact() {
                         <p>+995 558 29 43 64</p>
                     </div>
                 </div>
-                <form>
+                {/* <form>
                     <div>
                         <p className="or">Or Text Message</p>
                     </div>
@@ -26,9 +26,9 @@ function contact() {
                     <input type="email"  name="" id=""placeholder="Enter Email" />
                     <textarea placeholder="text" name="" id=""></textarea>
                     <div className='content__btn form__btn'>
-                    <a href='' className="btn contact__btn ">Send</a>
+                    <a href='#' className="btn contact__btn ">Send</a>
                 </div>
-                </form>
+                </form> */}
             </div>
         </div>
     )

@@ -18,12 +18,12 @@ function Header() {
                     </div>
                     <div>
                         <ul className= {isOpen ? "navbar active ": 'navbar'}>
-                            <div className="nav__name">Zura Beridze</div>
+                            <li className="nav__name">Zura Beridze</li>
                             <li onClick={closeMenu} className='item'><a href="#header">Home</a></li>
                             <li onClick={closeMenu} className='item'><a href="#aboutme">About</a></li>
                             <li onClick={closeMenu} className='item'><a href="#portfolio">Portfolio</a></li>
                             <li onClick={closeMenu} className='item'><a href="#contact">Contact</a></li>
-                            <div className="rights">© 2024 Zura. All rights are reserved</div>
+                            <li className="rights">© 2024 Zura. All rights are reserved</li>
                         </ul>
                     </div>
                     <div onClick={toggleMenu} className='burger'>
