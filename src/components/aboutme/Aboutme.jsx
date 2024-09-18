@@ -172,7 +172,7 @@ function Aboutme() {
                                             style={
                                                 {
                                                     width: `${item.percentage}%`,
-                                                    backgroundColor: `#3B3B3B`,
+                                                    backgroundColor: `#E64833`,
                                                     height: `4px`,
                                                     position: `relative`,
                                                     zIndex: `-1`,

@@ -22,6 +22,9 @@
                 display: grid;
                 gap: 15px;
                 margin-top: 1rem;
+                b{
+                    color: $dark-orange;
+                }
 
                 .name__percentage{
                     display: flex;

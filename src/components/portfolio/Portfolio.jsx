@@ -63,18 +63,44 @@ const portfolioList = [
 ]
 
 
+import { useGSAP } from "@gsap/react";
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
+
+
+
 function Portfolio() {
+
+    useGSAP(() => {
+        gsap.fromTo(".item__anim", {
+            delay: 1.7,
+            y: 100,
+            opacity: 0,
+            stagger: .1,
+            ease: 'none'
+
+          },{
+            scrollTrigger: {
+                trigger: ".item__anim",
+            },
+            y: 0,
+            stagger: .1,
+            duration: 1,
+            opacity: 1,
+            ease: 'none'
+        })
+    })
+
+
     return (
         <div className="portfolio">
             <div className='portfolio__content'>
                 <h2 className="main__head">2.Portfolio</h2>
-
-
                 <div className='portfolio__items'>
-
                     {
                         portfolioList.map((item) => (
-                            <div className='item' key={item.id}>
+                            <div className='item item__anim' key={item.id}>
                                 <img src={item.img_mobile} alt={item.img_mobile} className="mobile__absolute" />
                                 <img className='portf__img' src={item.img} alt={item.img} /> 
                                 <h3>{item.name}</h3>   
@@ -84,10 +110,8 @@ function Portfolio() {
                                 </div>
                             </div>
                         ))
-                    }
-                    
+                    }  
                 </div>
-
                 <div className='github__page'>
                     <h3>Visit My Github Page for More: </h3>
                     <div className='portfolio__link'>

@@ -6,6 +6,7 @@ $medium-color: #a9a9a9;
 $light-color: #d3d3d3;
 $medium-white: #f0f0f0;
 $white: #fff;
+$dark-orange: #E64833;
 
 *{
     margin: 0;
@@ -36,7 +37,7 @@ body{
     .btn{
         padding: 15px 50px;
         border-radius: 30px;
-        border: 1px solid $medium-white;
+        border: 1px solid $dark-orange;
         outline: none;
         font-size: 20px;
         color: $medium-white;
@@ -67,7 +68,7 @@ body{
 }
 
 .loading{
-    position: absolute;
+    position: fixed;
     height: 100dvh;
     background-color: $white;
     width: 100%;
@@ -77,6 +78,10 @@ body{
         position: absolute;
         bottom: 2rem;
         left: 5%;
+        
+        span{
+            color: $dark-orange;
+        }
     }
 }
 

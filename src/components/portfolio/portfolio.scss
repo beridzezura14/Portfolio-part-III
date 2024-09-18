@@ -11,7 +11,8 @@
         margin: auto;
 
         h2{
-            color: $white;
+            color: $dark-orange;
+            padding: 2rem 0;
         }
 
         .item{
@@ -38,12 +39,14 @@
             h3{
                 font-size: 23px;
                 margin-top: 1rem;
+                color: $dark-orange;
             }
 
             .portfolio__link{
                 margin: 2rem 0;
 
                 a{
+                    // border: 2px solid $dark-orange;
                     background-color: $white;
                     color: $primary-color;
                     padding: 10px 60px;
@@ -96,6 +99,9 @@
                 text-align: center;
     
                 .portfolio__link{
+                    a{
+                        color: red !important;
+                    }
 
                     a:hover{
                         padding: 10px 70px !important;

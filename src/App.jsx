@@ -30,7 +30,7 @@ function App() {
   return (
     <div className="main">
       <div className="loading">
-        <h1>Loading ...</h1>
+        <h1>Loading <span >...</span> </h1>
       </div>
       <div className="main__content">
         <Header />

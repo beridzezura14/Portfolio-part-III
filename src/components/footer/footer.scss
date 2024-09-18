@@ -17,9 +17,9 @@ $white: #fff;
 
     .logo__footer{
         display: inline-block;
-        color: $primary-color;
+        color: $white;
         padding: 30px;
-        background-color: $medium-white;
+        background-color: $dark-orange;
     }
 
 
@@ -28,6 +28,7 @@ $white: #fff;
         h4{
             font-size: 25px;
             color: $white;
+            color: $dark-orange;
         }
     }
 
@@ -85,7 +86,7 @@ $white: #fff;
                 background-color: $primary-color;
                 color: $light-color;
 
-                border: 1px solid $light-color;
+                border: 1px solid $dark-orange;
 
             }
         }
@@ -117,6 +118,9 @@ $white: #fff;
         padding: 5rem 10%;
         .footer__item__menu{
             padding-left: 0px !important;
+        }
+        .footer__item__newslatters{
+            width: 300px;
         }
     }
 }

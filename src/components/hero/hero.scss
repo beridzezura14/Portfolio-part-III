@@ -11,8 +11,11 @@
         margin: auto;
         .hero__text{
             text-align: center;
-        }
 
+            .color__orange{
+                color: $dark-orange;
+            }
+        }
         .hero__text h1{
             margin-top: 2rem;
             text-transform: uppercase;
@@ -23,10 +26,11 @@
             font-size: 18px;
         }
 
+
         .photo{
             display: flex;
             justify-content: center;
-            margin-top: 5rem;
+            margin-top: 10rem;
 
             .my__photo{
                 width: 80%;
