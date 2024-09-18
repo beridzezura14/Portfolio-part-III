@@ -1,5 +1,5 @@
-import me from '../hero/me2.jpg'
-import mepc from '../hero/me2-comp.jpg'
+import me from '../hero/me2.webp'
+import mepc from '../hero/me2-comp.webp'
 
 import { useGSAP } from "@gsap/react";
 import gsap from 'gsap'
