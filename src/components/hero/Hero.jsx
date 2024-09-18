@@ -57,7 +57,7 @@ function Hero() {
                     <h1 className='bottom_to_top'>Hello {`I'm`} <span className='color__orange'>ZURA</span>  BERIDZE</h1>
                     <p className='bottom_to_top'>{`My name is Zura, and I'm a front-end developer with experience in creating responsive and interactive user interfaces.`}</p>
                     <div className='content__btn bottom_to_top'>
-                        <a href='' className="btn">Contact Me</a>
+                        <a href='#contact' className="btn">Contact Me</a>
                     </div>
                 </div>
                 <div  className='photo'>

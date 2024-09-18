@@ -29,6 +29,12 @@ function Footer() {
                         <p>+995 558 29 43 64</p>
                     </div>
                 </div>
+                <div className="icon">
+                    <a href="https://www.facebook.com/zura.beridze.metqi"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.instagram.com/beridze_14/"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://github.com/beridzezura14?tab=repositories"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/zura-beridze-a39725197/"><ion-icon name="logo-github"></ion-icon></a>
+                </div>
             </div>
             <div  className="footer__item footer__item__newslatters">
                 <h4>Newslatters</h4>

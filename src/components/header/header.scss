@@ -50,6 +50,7 @@
                 .item a{
                     color: $primary-color;
                     font-size: 20px;
+                    transition: .5s;
                 }
     
                 .rights{
@@ -76,7 +77,6 @@
                     background-color: #222222;
                     transition: .5s;
                 }
-    
                 .burger__line__1.active{
                     transition: .5s;
                     transform: rotate(-45deg) translateY(3px) translateX(-3px);
@@ -143,10 +143,17 @@
                 display: flex !important;
                 justify-content: center !important;
                 margin-top: -5rem;
+
+                .item{
+
+                    a:hover{
+                        color: $dark-orange !important;
+                    }
+                }
                 .rights{
                     bottom: 1rem !important;
                     
-                 }
+                }
             }
         }
     }
