@@ -1,20 +1,20 @@
-import web_1 from './img/web_1.png'
-import mob_1 from './img/mob_1.png'
+import web_1 from './img/web_1.webp'
+import mob_1 from './img/mob_1.webp'
 
-import web_2 from './img/web_2.png'
-import mob_2 from './img/mob_2.png'
+import web_2 from './img/web_2.webp'
+import mob_2 from './img/mob_2.webp'
 
-import web_3 from './img/web_3.png'
-import mob_3 from './img/mob_3.png'
+import web_3 from './img/web_3.webp'
+import mob_3 from './img/mob_3.webp'
 
-import web_4 from './img/web_4.png'
-import mob_4 from './img/mob_4.png'
+import web_4 from './img/web_4.webp'
+import mob_4 from './img/mob_4.webp'
 
-import web_5 from './img/web_5.png'
-import mob_5 from './img/mob_5.png'
+import web_5 from './img/web_5.webp'
+import mob_5 from './img/mob_5.webp'
 
-import web_6 from './img/web_6.png'
-import mob_6 from './img/mob_6.png'
+import web_6 from './img/web_6.webp'
+import mob_6 from './img/mob_6.webp'
 
 
 const portfolioList = [
