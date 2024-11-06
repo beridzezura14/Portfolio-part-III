@@ -141,7 +141,7 @@ function Aboutme() {
             </p>
 
             <div className='content__btn about_anim'>
-                <a href='../cv.pdf' download='cv.pdf' className="btn contact__btn">Download CV</a>
+                <a href='/CV.pdf' download='CV.pdf' className="btn contact__btn">Download CV</a>
             </div>
 
             <div className="personal__info fade">
