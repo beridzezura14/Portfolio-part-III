@@ -84,19 +84,19 @@ const experience = [
     {   
         id: 1,
         name: "Global-Erty",
-        position: "instalator",
+        position: "Telecommunications service provider",
         date: "2018-2020"
     },
     {   
         id: 2,
         name: "Architectural Service",
-        position: "Technical Specialist",
+        position: "Architect and land surveyor",
         date: "2020-2022"
     },
     {   
         id: 3,
         name: "Ministry of Defence",
-        position: "Informaco Tecnology Specialist (IT specialist)",
+        position: "Information Tecnology Specialist (IT specialist)",
         date: "2022 - today"
     },
    
